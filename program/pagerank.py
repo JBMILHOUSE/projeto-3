@@ -51,7 +51,6 @@ def transition_model(corpus, page, damping_factor):
             probabilities[link] = 1 / num_pages
     
     return probabilities
-    # raise NotImplementedError
 
 
 def sample_pagerank(corpus, damping_factor, n):
@@ -73,7 +72,6 @@ def sample_pagerank(corpus, damping_factor, n):
         page_rank[page] /= total_visits
 
     return page_rank
-    # raise NotImplementedError
 
 
 def iterate_pagerank(corpus, damping_factor):
@@ -106,8 +104,6 @@ def iterate_pagerank(corpus, damping_factor):
         page_rank = new_ranks.copy()
     
     return page_rank
-
-    # raise NotImplementedError
 
 
 if __name__ == "__main__":
